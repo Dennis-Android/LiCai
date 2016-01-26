@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+  
+     
+       <include 
+        layout="@layout/fragment_titlebar"
+        />
+        
+          
+          <Button 
+              android:id="@+id/login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="登录/注册"
+              android:visibility="gone"
+              android:textColor="@color/white"
+              android:layout_marginTop="40dp"
+              android:background="@drawable/half_width_button"
+              android:layout_marginLeft="14dp"
+              android:layout_marginRight="14dp"
+               />
+          
+          
+          <ScrollView 
+              android:id="@+id/scroll"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:scrollbars="none"
+               
+               >
+              
+              <LinearLayout 
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  >
+                  
+               <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    >
+                   <ImageView 
+                     android:id="@+id/imag"
+                     android:layout_width="wrap_content"  
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/asset_avatar"  
+                      android:layout_centerVertical="true"
+                      android:layout_margin="20dp" 
+                        />
+
+                   <TextView
+                       android:id="@+id/fg3_account"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignTop="@+id/imag"
+                       android:layout_toRightOf="@+id/imag"
+                        android:textColor="@color/black"
+                       android:text=" " />
+                   
+                    <TextView
+                       android:id="@+id/fg3_money"
+                       android:layout_marginTop="20dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/fg3_account"
+                       android:layout_toRightOf="@+id/imag"
+                       android:textColor="@color/red"
+                       android:text="¥0" />
+                 </RelativeLayout>   
+                  
+                  
+                  
+                  
+                  
+                  <!-- 今日收益 -->
+                  <RelativeLayout
+                  android:id="@+id/fg3_shoyi_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/indianred"
+                  android:padding="10dp"
+                    >
+                   
+
+                   <TextView
+                       android:id="@+id/jinri"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginTop="20dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:text="今日收益(元)" />
+                   
+                    <TextView
+                       android:id="@+id/today_shouyi"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/jinri"
+                       android:layout_alignLeft="@+id/jinri"
+                       android:textColor="@color/white"
+                       android:textSize="45sp" 
+                       android:text="0.00" />
+                
+                    
+                    <TextView
+                       android:id="@+id/leiji_shouyi"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/today_shouyi"
+                       android:layout_alignLeft="@+id/today_shouyi"
+                       android:textColor="@color/white"
+                       
+                       android:text="累积收益0.00" />
+                    
+                    
+                      
+                    <TextView
+                       android:id="@+id/mingxi_shouyi"
+                       
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignTop="@+id/leiji_shouyi"
+                       android:layout_alignBottom="@+id/leiji_shouyi"
+                       android:layout_alignParentRight="true"
+                       android:textColor="@color/white"
+                       android:text="收益明细" />
+                    
+                  </RelativeLayout>    
+                  
+                  
+                  
+                  
+                  
+                  
+                  <LinearLayout 
+                    android:orientation="horizontal"  
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      
+                      >
+                    
+                      <RelativeLayout 
+                          android:id="@+id/yigouzichan_ll"
+                          android:layout_weight="1"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:padding="10dp"
+                          android:background="@drawable/click_hint_button_gray2"
+                          >
+                          
+                        <TextView 
+                            android:id="@+id/yigou"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已购资产(元)"
+                            android:textColor="@color/black"
+                             />  
+                          
+                          
+                        
+                          <TextView 
+                            android:id="@+id/yigou_money"
+                            android:layout_below="@id/yigou"
+                            android:layout_alignLeft="@id/yigou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                             />  
+                        
+                          
+                          
+                      </RelativeLayout>
+                      
+                      
+                      
+                      
+                      
+                      
+                        
+                      
+                     
+                  </LinearLayout>
+                  
+                
+                  
+               
+                  <TextView 
+                      
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      />
+                  
+                  
+                  
+         <ImageView 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:src="@drawable/logo_xian" 
+         android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+                  
+                  
+                      <!-- 检查更新-->
+       <LinearLayout 
+           android:id="@+id/goumai_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/asset_tag_purchase"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="购买记录"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+            
+                  
+                  
+                           <!-- 检查更新-->
+       <LinearLayout 
+           android:id="@+id/huankuan_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/asset_tag_repayment"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="还款记录"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>      
+       
+       
+       
+       
+       
+                       <!-- 检查更新-->
+       <LinearLayout 
+           android:id="@+id/Mybank_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/bank_ioc"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="我的银行卡"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+        
+       
+        
+           
+       
+       
+       
+       
+       
+        
+       
+                  
+                  
+              </LinearLayout>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+          </ScrollView>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+     
+</LinearLayout>

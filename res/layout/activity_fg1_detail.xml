@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+      >
+     
+    
+      <include 
+         android:id="@+id/include"
+         layout="@layout/titlebar"
+         />
+     
+      
+    
+      <ScrollView 
+         android:id="@+id/fg1_scroll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:scrollbars="none"
+          >
+         
+         
+         <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              
+               >
+     
+     
+    <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        
+        >
+         
+        <TextView 
+            android:layout_alignTop="@+id/fg1_financial_period"
+            android:layout_alignBottom="@+id/fg1_financial_period"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="预期年化"
+            />
+        
+      <!--   期限 -->
+         <TextView 
+            android:id="@+id/fg1_financial_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="@drawable/deadline"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+        
+        <!--  折扣 -->
+        <TextView 
+            android:id="@+id/fg1_annual_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/red"
+            android:layout_below="@id/fg1_financial_period"
+            android:textSize="38sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+         
+          <TextView 
+            android:id="@+id/fg1_starting_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fg1_financial_period"
+            android:layout_alignTop="@id/fg1_annual_rate"
+            android:gravity="center"
+            
+            />
+         <!-- 融资金额 -->
+          <TextView 
+            android:id="@+id/fg1_amount_raised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fg1_starting_amount"
+             android:layout_alignBottom="@id/fg1_annual_rate"
+            android:gravity="center"
+            
+            />
+         
+          
+           
+          <TextView 
+            android:id="@+id/fg1_has"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已售出"
+            android:layout_below="@id/fg1_annual_rate"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+        <!--   已售出 -->
+          
+          <TextView 
+            android:id="@+id/fg1_has_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_below="@+id/fg1_annual_rate"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/fg1_has"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            
+            />
+         
+          
+         
+           <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可售"
+            android:layout_below="@+id/fg1_annual_rate"
+            android:layout_toLeftOf="@+id/fg1_selling_amount"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+         
+          
+          <!-- 可售 -->
+          <TextView 
+            android:id="@+id/fg1_selling_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_below="@+id/fg1_annual_rate"
+            android:textColor="@color/red"
+            android:layout_toLeftOf="@+id/fg1_yuan"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+             />
+          
+           <TextView 
+            android:id="@+id/fg1_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:layout_below="@+id/fg1_annual_rate"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            
+             />
+      
+      
+       <TextView 
+           android:layout_marginTop="10dp"
+           android:id="@+id/fg1_shouyi_test"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/fg1_has_sell"
+           android:text="收益举例:投资100000元,后到期收益 "
+          android:layout_gravity="center" 
+           
+           />
+     <!--  到期收益 -->
+       <TextView 
+           android:id="@+id/fg1_shouyi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/fg1_shouyi_test"
+           android:textColor="@color/red"
+           android:text="456.32"
+         android:layout_gravity="center" 
+           android:layout_below="@id/fg1_has_sell" 
+            android:layout_marginTop="10dp"
+           />
+     <TextView 
+           android:layout_toRightOf="@+id/fg1_shouyi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/fg1_has_sell"
+           android:layout_gravity="center" 
+           android:layout_marginTop="10dp"
+           android:text="元"
+           />
+     </RelativeLayout>
+    
+       
+           <Button 
+              android:id="@+id/fg1_experience_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="送5000元体验金"
+              android:visibility="gone"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/try_money_tip_new_bg"
+              android:textColor="@color/white"
+              
+              
+              />
+      
+    
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/guarantee_red"
+          android:layout_margin="20dp"
+          android:text="账户资产安全由中国人民财产保险承担"
+          android:textSize="17sp"
+          android:layout_gravity="center" 
+          android:singleLine="true"
+          android:textColor="#4169e1" />
+    
+         
+          
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="8dp"
+              >
+               <TextView 
+              
+            android:text="还款方式"  
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            
+            android:textSize="20sp"  
+              
+              />
+            <TextView 
+                android:id="@+id/fg1_cur_server_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text=" "
+                
+                />  
+               <TextView 
+                android:id="@+id/fg1_fake_repayment_time"
+                android:layout_width="wrap_content"
+                 android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:text=" "
+                
+                />  
+               <TextView 
+                android:id="@+id/fg1_repayment_desc"
+                android:layout_width="wrap_content"
+                 android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:text=" "
+                />  
+           </LinearLayout>
+          
+          
+          
+          
+          
+         <!--  活动奖励 -->
+          <LinearLayout 
+              android:id="@+id/ll_jiangli"
+              android:layout_width="match_parent"
+              android:visibility="gone"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="8dp"
+              >
+          
+            <TextView 
+            android:text="活动奖励"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textSize="20sp"  
+             />
+          
+           
+          <LinearLayout 
+              android:id="@+id/fg1_activity_detail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="4dp"
+              >
+              
+            <TextView 
+              android:id="@+id/fg1_jiangli"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:layout_weight="1"
+              android:layout_gravity="center_vertical"
+              />
+             
+             <ImageView 
+                 android:layout_gravity="center_vertical" 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/click_hint_button_gray"
+                 
+                 />
+           </LinearLayout> 
+           </LinearLayout>   
+          
+           
+          
+          <!-- 申购情况 -->
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="8dp"
+              >
+            <TextView 
+            android:text="申购情况"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textSize="20sp"  
+              />
+           
+           <LinearLayout 
+              android:id="@+id/ll_person_amount"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="4dp"
+              >
+              
+            <TextView 
+             android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="已申购订单"
+              android:layout_weight="1"
+              android:layout_gravity="center_vertical"
+              />
+             
+            <TextView 
+                 android:id="@+id/fg1_person_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                  android:layout_gravity="center_vertical"
+                />
+           
+             <ImageView 
+                 android:layout_gravity="bottom"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/click_hint_button_gray"
+                 
+                 />
+           </LinearLayout> 
+           </LinearLayout>
+    
+            
+            
+          
+          
+          
+          
+           <!--项目描述 -->
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="8dp"
+              >
+            <TextView 
+            android:text="项目描述 "  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textSize="20sp"  
+              />
+           
+           <LinearLayout 
+              android:id="@+id/ll_project_summary"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="4dp"
+              >
+              
+             <TextView 
+              android:id="@+id/fg1_project_summary"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text=" "
+              android:layout_weight="1"
+              android:layout_gravity="center_vertical"
+              />
+          
+             <ImageView 
+                 android:layout_gravity="bottom"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/click_hint_button_gray"
+                 
+                 />
+           </LinearLayout> 
+           </LinearLayout>
+          
+          
+            <!--资金保障 -->
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="8dp"
+              >
+            <TextView 
+            android:text="资金保障 "  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:textSize="20sp"  
+              />
+           
+           <LinearLayout 
+              android:id="@+id/ll_borrower_summary"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="4dp"
+              >
+              
+             <TextView 
+              android:id="@+id/fg1_borrower_summary"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:layout_weight="1"
+              android:layout_gravity="center_vertical"
+              />
+          
+             <ImageView 
+                 android:layout_gravity="bottom"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/click_hint_button_gray"
+                 
+                 />
+           </LinearLayout> 
+           </LinearLayout>
+           </LinearLayout>
+            </ScrollView>
+          
+   
+      
+     <!-- 底部的计算器 -->
+          <LinearLayout 
+              android:id="@+id/fg1_dibu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              
+              >
+              
+              <ImageButton 
+                  android:id="@+id/fg1_calculator"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/calculator_button_with_title"
+                  android:background="@null"
+                   android:layout_marginRight="8dp"
+                   />
+              
+              <Button 
+                  android:id="@+id/fg1_bt_title"
+                   android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:text=" "
+                  android:background="@drawable/btn_selector"             
+                  android:enabled="false"
+               />
+          </LinearLayout>
+         
+          
+      
+          
+          
+    
+
+</LinearLayout>

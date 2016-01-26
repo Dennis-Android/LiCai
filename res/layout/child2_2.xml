@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+ 
+     <TextView 
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+         android:text="活期宝"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/black"
+         />
+      
+     
+       <!-- 产品名称 -->
+     <TextView
+          android:id="@+id/child1_2_product_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/child1_2_annual_rate"
+          android:layout_alignBottom="@id/child1_2_annual_rate"
+          android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+          android:gravity="center_vertical"
+          android:text="1100期" />
+      
+    
+    
+        <TextView
+          android:id="@+id/child1_2_starting_amount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/black"
+          android:layout_alignParentRight="true" 
+          android:text="已经购买人数" />
+    
+    
+     
+      
+       <!--预期年化  -->
+        <TextView
+          android:id="@+id/child1_2_repayment_type"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+           android:textColor="@color/black"
+          android:text="预期年化" />
+      
+        
+      
+
+        <TextView
+            android:id="@+id/child1_2_annual_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/child1_2_repayment_type"
+            android:text="10.00%"
+             android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+        
+        <!-- 人数 -->
+        <TextView
+            android:id="@+id/child1_2_person_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/child1_2_annual_rate"
+            android:layout_alignLeft="@+id/child1_2_starting_amount"
+            android:singleLine="true"
+             android:textColor="@color/black"
+            android:text="468人"
+            />
+          
+          
+          
+          <ImageView 
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_xian"
+            android:layout_alignParentBottom="true"
+            />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+     <LinearLayout 
+       android:id="@+id/activity4_ll"
+       android:visibility="visible"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#ffe4c4"
+       >
+        <TextView 
+            android:layout_margin="7dp"
+            android:drawableLeft="@drawable/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每月定期还款,复投更灵活"
+            android:textColor="#ff0000"
+            android:drawablePadding="4dp"
+            />
+      
+      </LinearLayout>  
+    
+           
+    
+   <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"   
+    android:id ="@+id/expandableListView4"   
+    android:layout_width ="fill_parent"   
+    android:layout_height ="match_parent"   
+    android:listSelector="#00000000"
+    ptr:ptrAnimationStyle="flip"      
+    android:scrollbars="none"    
+    ptr:ptrHeaderTextColor="#000000"  
+    android:divider="@drawable/logo_xian"      
+        />   
+          
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

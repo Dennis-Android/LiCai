@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    
+      
+     
+    
+    <TextView 
+          android:id="@+id/time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:text="2015-12-12"
+          android:layout_gravity="center_horizontal"
+          />
+    
+       <TextView 
+          android:id="@+id/content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=" 普大喜奔！双十二老板买嗨了全场加息送红包！！！每个整点都是满满的惊喜、稳稳的幸福！60元代金券已洗白白躺在您的资产里等您临幸啦！不说了，买买买！错过一天再等一年！（vip整点也有surprise哟！）"
+          android:layout_margin="5dp"
+          />
+     
+    
+    
+</LinearLayout>

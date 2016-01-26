@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+    
+        
+    
+       <include 
+          layout="@layout/titlebar"
+           />
+          
+       <ScrollView 
+           
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="none"
+           >
+       
+       <LinearLayout 
+           
+           
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+       
+       
+       <RelativeLayout 
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:paddingBottom="10dp"
+           >
+           
+           
+           <TextView 
+               
+               android:id="@+id/buy_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="@color/black"
+               android:text="安信保"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               
+               />
+            
+            <TextView 
+              
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="@color/black"
+               android:text="预期年化"
+               android:layout_toLeftOf="@+id/buy_zhekou"
+               android:layout_alignTop="@+id/buy_zhekou"
+               />
+            
+           <TextView 
+               android:id="@+id/buy_zhekou"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="@color/red"
+               android:text="9.00%"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="20dp"
+               
+               
+               />
+           
+           
+            <TextView 
+               android:id="@+id/buy_qixi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:layout_below="@+id/buy_name"
+               android:text="2015-12-17起息"
+                android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               />
+           
+           
+           <TextView 
+               android:id="@+id/buy_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:layout_alignRight="@+id/buy_zhekou"
+               android:layout_below="@+id/buy_zhekou"
+               android:text="期限120天"
+                 android:layout_marginTop="10dp"
+               />
+           
+           
+           
+           
+           
+       </RelativeLayout>
+        
+       
+       
+       
+       <!-- 购买金额 -->
+       <LinearLayout 
+           android:layout_marginTop="20dp"
+           android:background="@color/white"
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+             
+            <TextView 
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"
+                android:text="购买金额:"
+                android:textColor="@color/black"
+               />
+            
+             <EditText 
+                android:id="@+id/edit_buy"
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                android:background="@null"
+               />
+            
+            
+            
+           
+            
+        </LinearLayout>
+       
+     
+       
+       
+         <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+       
+       
+         <!-- 体验金 -->
+       <LinearLayout 
+           android:id="@+id/tiyan_ll"
+           android:background="@color/white"
+           android:padding="5dp"
+           android:layout_width="match_parent"
+          android:visibility="gone"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+            >
+           
+           
+             <TextView 
+                 android:id="@+id/tiyan"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="送5000元体验金"
+                
+                 android:background="@drawable/try_money_tip_new_bg"
+                 android:gravity="center"
+                 android:textColor="@color/white"
+                 />  
+          
+            
+        </LinearLayout>
+       
+     
+       
+       
+         <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+       
+        <!-- 预计收益 -->
+       <LinearLayout 
+          android:background="@color/white"
+           android:padding="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+             
+            <TextView 
+                android:layout_marginLeft="10dp"
+                 android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="预计收益:"
+                 
+               />
+            
+             <TextView 
+               android:id="@+id/buy_shouyi"
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:background="@null"
+                 android:text="0"
+               />
+            
+             <TextView 
+                
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"
+                android:text="元"
+                
+               />
+        </LinearLayout>
+       
+       
+        <TextView 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择支付方式"
+             android:textColor="@color/white"
+            />
+       
+       
+        
+            
+            
+        
+                 
+       <LinearLayout 
+           android:id="@+id/Setting_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:background="@color/white"
+            >
+            <ImageView 
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/asset_tag_purchase1"
+                />
+            <TextView 
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"
+                android:text="余额:"
+               />
+            
+           <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="@color/black"
+               />
+         
+            <CheckBox 
+               android:id="@+id/yue_zhifu"
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:background="@drawable/zhifu_select" 
+               android:button="@null"
+                 
+                />
+        </LinearLayout>
+       
+       
+       
+         <ImageView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+       
+       
+       
+       
+       
+       
+       
+        <LinearLayout 
+          
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:background="@color/white"
+            >
+            <ImageView 
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/bank_ioc"
+                />
+            <TextView 
+                android:layout_width="0dp"    
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="银行卡"
+               />
+          
+            <CheckBox 
+               android:id="@+id/card_zhifu"
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:background="@drawable/zhifu_select" 
+               android:button="@null"
+               android:checked="true"  
+                />
+        </LinearLayout>
+       
+         <ImageView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY" />
+       
+       
+       
+         <LinearLayout 
+          
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:background="@color/white"
+            >
+            <CheckBox 
+                 android:layout_marginLeft="10dp"
+                android:id="@+id/buy_checek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                />
+             
+             <TextView
+                android:id="@+id/buy_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我同意服务协议" 
+                
+                />
+             
+        </LinearLayout>
+       
+       
+       
+           <Button 
+              android:id="@+id/buy_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="提交"
+              android:textColor="@color/white"
+              android:background="@drawable/btn_selector"
+              android:layout_margin="12dp"
+              />
+       
+      
+         </LinearLayout>
+       
+       
+       </ScrollView>
+       
+       
+       
+    
+    
+    
+    
+    
+</LinearLayout>

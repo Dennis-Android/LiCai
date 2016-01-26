@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:orientation="vertical" >
+     
+    
+    <include layout="@layout/titlebar"/>
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_gravity="center_horizontal"
+       />
+    
+    
+    
+         
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/withdraw_deposit"
+           android:gravity="center_vertical"
+           >
+          
+           <EditText 
+               android:id="@+id/input_code"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:hint="请输入验证码"
+               android:background="@null"
+               
+                android:layout_margin="8dp"
+               />
+        
+           <Button 
+              android:id="@+id/get_code"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:text="获取验证码"
+              android:textColor="@color/white"
+              android:background="#cd5c5c"
+              />
+            
+       </LinearLayout>
+    
+    
+    
+      
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           >
+               
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="登录密码:"
+       />
+           
+         
+           <EditText 
+               android:id="@+id/input_password"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:hint="设置登录密码不少于6位"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="4dp"
+               />
+         </LinearLayout>
+       
+       
+        <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           >
+               
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="我同意"
+        android:checked="true"
+        />
+           
+         
+           <Button 
+               android:id="@+id/xieyi_btn"
+               android:text="聚财猫用户使用协议"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@null"
+               android:layout_gravity="center_vertical"
+               android:textColor="@color/blue"
+               android:textSize="18sp"
+              
+               />
+         </LinearLayout>
+       
+      
+       
+       
+         
+          <Button 
+              android:id="@+id/regist_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="注册"
+              android:textColor="@color/white"
+              android:background="@drawable/btn_selector"
+              android:layout_margin="12dp"
+              />
+           
+       
+        
+       
+       
+       
+       
+       
+       
+    
+    
+
+</LinearLayout>

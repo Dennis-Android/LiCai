@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 产品名称 -->
+
+    <TextView
+        android:id="@+id/child1_1_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="新手标B1225"
+        android:textColor="@color/black" />
+ 
+
+    <!-- 起购价格 -->
+
+    <TextView
+        android:id="@+id/child1_1_starting_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/child1_1_annual_rate"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/child1_1_annual_rate"
+        android:layout_marginRight="20dp"
+        android:text="1000元"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <!-- 预期年化 -->
+
+    <TextView
+        android:id="@+id/child1_1_annual_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/child1_1_product_name"
+        android:layout_below="@+id/child1_1_product_name"
+        android:text="10.00%"
+        android:textColor="#ff0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/child1_1yuqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/child1_1_annual_rate"
+        android:layout_below="@+id/child1_1_annual_rate"
+        android:text="预期年化"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/child1_1yuqi"
+        android:layout_alignBottom="@+id/child1_1yuqi"
+        android:layout_alignLeft="@+id/child1_1_starting_amount"
+        android:singleLine="true"
+        android:text="起购金额"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

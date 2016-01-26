@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+  
+     
+       <include 
+        layout="@layout/fragment_titlebar"
+       />
+       
+       
+       
+         <ImageView 
+           android:layout_marginTop="30dp"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:src="@drawable/logo_xian" 
+         android:scaleType="fitXY" />
+       
+       
+       
+               <!--    帐号中心 -->
+       <LinearLayout 
+           
+         
+           android:id="@+id/account_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/account"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="账户中心"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+      
+         android:scaleType="fitXY" />
+       
+       
+          
+       
+       
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+                <!-- 消息中心 -->
+       <LinearLayout 
+           android:id="@+id/Message_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/more_tag_message"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="消息中心"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+                <!--常见问题 -->
+       <LinearLayout 
+           android:id="@+id/Problam_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/more_tag_faq"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+       
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+       
+                <!-- 联系我们 -->
+       <LinearLayout 
+            android:id="@+id/LianXi_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/more_tag_contacts"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="联系我们"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+             <TextView 
+                
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"
+                android:text="400-050-1889"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+               />
+           
+           
+           
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+       
+                <!-- 意见反馈 -->
+       <LinearLayout 
+           android:id="@+id/FanKui_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/more_tag_feedback"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="意见反馈"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+     
+       
+       
+       
+          <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+       
+       
+       
+                <!-- 检查更新-->
+       <LinearLayout 
+           android:id="@+id/Setting_ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+            >
+            <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/more_tag_setting"
+                />
+            <TextView 
+                android:layout_weight="1"
+                android:layout_width="0dp"    
+                android:layout_height="wrap_content"
+                android:text="检查更新"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               />
+           <ImageView 
+               android:layout_margin="12dp"
+               android:layout_width="wrap_content"    
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_detail_arrow"
+                
+                />
+        </LinearLayout>
+       
+         <ImageView 
+       
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:layout_alignParentBottom="true"
+         android:scaleType="fitXY" />
+       
+       
+       
+       
+</LinearLayout>

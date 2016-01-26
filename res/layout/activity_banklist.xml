@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <include layout="@layout/titlebar" />
+    
+    
+    
+    <TextView 
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您还没有绑定银行卡,为了交易流程更加顺畅，建议您先添加银行卡"
+        
+        
+        />
+    
+    
+    
+    
+    
+    
+          <Button 
+              android:id="@+id/add_card_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="添加银行卡"
+              android:textColor="@color/white"
+              android:background="@drawable/button_selector"
+              android:layout_margin="12dp"
+              />
+    
+    
+    
+    
+
+</LinearLayout>

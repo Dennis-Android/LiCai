@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+     
+    
+    <include 
+      
+        layout="@layout/titlebar"/>
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入手机号注册或登录"
+        android:layout_margin="18dp"
+        android:layout_gravity="center_horizontal"
+       />
+    
+    
+    
+         
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@color/white"
+           >
+           
+          
+           
+           
+          <ImageView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/phone_icon"
+              android:layout_margin="8dp"
+               android:layout_gravity="center_vertical" 
+              
+              />
+           
+           
+           <EditText 
+               android:id="@+id/input_phone"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:hint="请输入您的手机号"
+               android:background="@null"
+               android:layout_gravity="center_vertical"
+               
+               />
+           
+      
+           
+       </LinearLayout>
+    
+    
+    
+       
+         
+          <Button 
+              android:id="@+id/login_next"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="下一步"
+              android:textColor="@color/white"
+              android:background="@drawable/half_width_button"
+              android:layout_margin="12dp"
+              />
+           
+       
+         <TextView 
+             
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="客服电话:400-050-1889"
+             android:layout_gravity="center_horizontal"
+             android:textColor="@color/gray"
+             
+             />
+       
+       
+       
+       
+       
+       
+    
+    
+
+</LinearLayout>
