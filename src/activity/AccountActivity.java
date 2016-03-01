@@ -47,7 +47,7 @@ public class AccountActivity extends BaseActivity implements OnClickListener {
 	         initview(context, "账户中心");
 	         findview();
 	         
-	        
+	         String a="测试";
 	         
 		    
 		     
